@@ -36,19 +36,47 @@ class ShopProducts extends connect(store)(LitElement) {
         img{
           max-width:150px !important;
           height:auto;
-
-          .adopt{
-            text-align:left;
+          background-color:#fff;
+          opacity:0.6;
+          border-radius: 55%;
+          padding:1.5rem;
+          display:block;
+          text-align:center;
+          margin:0 auto;
+        }
+          img:hover{
+            opacity:1;
           }
+
+        shop-item{
+          font-size:1.5rem;
+          font-family: 'Gabriola';
+        }
+
+        p{
+          text-align:left;
+        }
+
+        button{
+          margin-bottom:2rem;
+        }
     
       </style>
       ${Object.keys(this._products).map((key) => {
         const item = this._products[key];
         return html`
           <div class="adopt">
-          <img src="images/${item.img}"><br>
-            <shop-item name="${item.title}" amount="${item.inventory}" price="${item.price}"></shop-item>
-            
+
+          <div class="container">
+  
+          <img class="next_to" src="images/${item.img}">
+
+         
+            <shop-item name="${item.title}" amount="${item.inventory}" price="${item.price}" class="next_to"></shop-item>
+          <p> ${item.des}</p>       
+   
+          </div>
+
             <button
                 .disabled="${item.inventory === 0}"
                 @click="${this._addButtonClicked}"

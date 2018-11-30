@@ -28,7 +28,7 @@ export const SharedStyles = html`
     margin-right: auto;
     margin-left: auto;
     font-family: 'Adobe Song Std L';
-    // text-align:center;
+    text-align:center;
   }
 
   section:nth-of-type(even) {

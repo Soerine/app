@@ -34,7 +34,7 @@ class ShopCart extends connect(store)(LitElement) {
       <style>
         :host { display: block; }
       </style>
-      <p ?hidden="${this._items.length !== 0}">Click on a being you would like to adopt...</p>
+      <p ?hidden="${this._items.length !== 0}">You have not yet chosen someone to Adopt...</p>
       ${this._items.map((item) =>
         html`
           <div>

@@ -15,11 +15,11 @@ export const CHECKOUT_SUCCESS = 'CHECKOUT_SUCCESS';
 export const CHECKOUT_FAILURE = 'CHECKOUT_FAILURE';
 
 const PRODUCT_LIST = [
-  { "id": 1, "title": "Unicorn with stripes", "price": 10.99, "inventory": 2, "img": "1.png" },
-  { "id": 2, "title": "Cat with wings", "price": 29.99, "inventory": 10, "img": "2.png" },
-  { "id": 3, "title": "Rainbow colored pig with cheese powers", "price": 8.99, "inventory": 5, "img": "3.png" },
-  { "id": 4, "title": "Ninjatrained lizard", "price": 24.99, "inventory": 7, "img": "4.png" },
-  { "id": 5, "title": "Dragon but tiny", "price": 11.99, "inventory": 3, "img": "5.png" }
+  { "id": 1, "title": "Zebra Fox", "des": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis", "price": 10.99, "inventory": 2, "img": "1.png" },
+  { "id": 2, "title": "Deer Horse", "des": "velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum", "price": 29.99, "inventory": 10, "img": "2.png" },
+  { "id": 3, "title": "Pink n Blue Fox", "des": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quas", "price": 8.99, "inventory": 5, "img": "3.png" },
+  { "id": 4, "title": "Bunny Horse", "des": "t enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel e", "price": 24.99, "inventory": 7, "img": "4.png" },
+  { "id": 5, "title": "Flying Green Fox Horse", "des": "nis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vit", "price": 11.99, "inventory": 3, "img": "5.png" }
 ];
 
 export const getAllProducts = () => (dispatch) => {

@@ -21,8 +21,6 @@ class MyView1 extends PageViewElement {
       <section>
         <h2>We love all magical beings!</h2>
         <p>This is a page for magic beings! We love them all! Yay</p>
-
-        <img src="images/1.png" alt="test">
       </section>
       <section>
         <h2>Help us - Help them!</h2>

@@ -72,9 +72,23 @@ class MyView3 extends connect(store)(PageViewElement) {
 
         h3{
           font-family: 'Gabriola';
+          font-size:2.6rem;
+          text-align:center;
+        }
+
+        
+        h4{
+          font-family: 'Gabriola';
           font-size:2rem;
           text-align:center;
         }
+
+        #cart{
+          
+          border: 4px #ffe6e6 dotted;
+          margin-bottom:3rem;
+        }
+
       </style>
       
       <section>
@@ -86,20 +100,26 @@ class MyView3 extends connect(store)(PageViewElement) {
 
 
       <section>
-        <h3>Animals you can adopt!</h3>
-        <shop-products></shop-products>
-
+        <h3>Animals you can Adopt!</h3>
+        
+<div id="cart">
         <br>
-        <h3>Your adoptions</h3>
+        <h4>Beings you have chosen to Adopt</h4>
         <shop-cart></shop-cart>
 
         <div>${this._error}</div>
         <br>
+
+        </div>
+
+
         <p>
           <button ?hidden="${this._quantity == 0}" @click="${this._checkoutButtonClicked}">
             Adopt
           </button>
         </p>
+        
+        <shop-products></shop-products>
       </section>
     `;
   }
