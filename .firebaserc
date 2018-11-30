@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "<project-id>",
+    "test": "igen-915db"
+  }
+}

@@ -21,6 +21,13 @@ module.exports = {
     {
       urlPattern: /^https:\/\/fonts.gstatic.com\//,
       handler: 'fastest'
+    },
+
+    {
+      navigateFallback: '/index.html',
+      navigateFallbackWhitelist: [/^\/[^\_]+\/?/]
     }
   ]
 };
+
+
